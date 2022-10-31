@@ -1,5 +1,4 @@
 
-
 {
     "name": "project",
     "version": "0.1.0",
@@ -14,7 +13,7 @@
         "copy": "npm-run-all --parallel copy:*",
         "watch:images": "onchange \"images/**/*\" -- npm run copy:html",
         "watch:html": "onchange \"*.html\" -- npm run copy:html",
-        "watch:sass": "sass  --no-source-map --watch sass:css",
+        "watch:sass": "sass  --no-source-map --watch scss:css",
         "watch:js": "onchange \"*.js\" -- npm run copy:js",
         "watch": "npm-run-all --parallel watch:*",
         "serve": "browser-sync start --server public --files public",
